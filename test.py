@@ -1,14 +1,15 @@
 from PyQt5 import uic, QtWidgets
-from PyQt5.QtWidgets import QWidget, QApplication
+# from PyQt5.QtWidgets import QWidget
+import PyQt5.QtWidgets
 # import Jetson.GPIO as GPIO
 
 # pin
 led_pin = 12   # BOARD pin 12
 
 
-class GPIO_Ui(QWidget):
+class GPIO_Ui(QtWidgets.QWidget):
     def __init__(self, parent=None):
-        QWidget.__init__(self, parent)
+        QtWidgets.QWidget.__init__(self, parent)
         self.ui = uic.loadUi("widget.ui")
         self.ui.setWindowTitle("GPIO test")
         self.ui.show()
@@ -28,6 +29,6 @@ class GPIO_Ui(QWidget):
 
 
 if __name__ == "__main__":
-    app = QApplication([])
+    app = QtWidgets.QApplication([])
     w = GPIO_Ui()
     app.exec_()
