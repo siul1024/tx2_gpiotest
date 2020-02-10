@@ -5,7 +5,7 @@ import threading
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QImage, QPixmap
 
-from siul1024.car_control import CarControl
+from remote_control_key.car_control import CarControl
 # from siul1024.test.uitest import TestCarControl
 
 onboard_cam = "nvarguscamerasrc ! video/x-raw(memory:NVMM), width=640, height=480,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink"
