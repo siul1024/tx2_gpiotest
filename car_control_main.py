@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import QtWidgets
-from siul1024.control_tool_ui import ControlToolUi
+from remote_control_key.control_tool_ui import ControlToolUi
 
 
 if __name__ == "__main__":
