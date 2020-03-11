@@ -35,7 +35,7 @@ class ControlToolUi(QtWidgets.QWidget):
         self.th2.start()
 
     def __init_ui(self):
-        ui = uic.loadUi("control_tool.ui")
+        ui = uic.loadUi("remote_control_key/control_tool.ui")
         ui.setWindowTitle("remote control")
         # button signal & slot
         ui.btn_right.pressed.connect(self.myCar.turn_right)
